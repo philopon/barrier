@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards #-}
 
-module Graphics.Badge.Barrier.FlatSquare
+module Graphics.Badge.Barrier.Style.FlatSquare
     ( FlatSquare(..)
     , flatSquare
     ) where

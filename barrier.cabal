@@ -22,11 +22,11 @@ flag build-generator
 
 library
   exposed-modules:     Graphics.Badge.Barrier
-                       Graphics.Badge.Barrier.Flat
-                       Graphics.Badge.Barrier.FlatSquare
-                       Graphics.Badge.Barrier.Plastic
                        Graphics.Badge.Barrier.Color
                        Graphics.Badge.Barrier.Internal
+                       Graphics.Badge.Barrier.Style.Flat
+                       Graphics.Badge.Barrier.Style.FlatSquare
+                       Graphics.Badge.Barrier.Style.Plastic
   build-depends:       base                 >=4.6  && <4.8
                      , template-haskell
                      , unordered-containers >=0.2  && <0.3

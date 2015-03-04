@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards #-}
 
-module Graphics.Badge.Barrier.Plastic
+module Graphics.Badge.Barrier.Style.Plastic
     ( Plastic(..)
     , plastic
     ) where

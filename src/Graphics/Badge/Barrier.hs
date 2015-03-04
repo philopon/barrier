@@ -18,15 +18,18 @@ module Graphics.Badge.Barrier
 import Graphics.Badge.Barrier.Internal
 import Graphics.Badge.Barrier.Color
 
-import Graphics.Badge.Barrier.Flat
-import Graphics.Badge.Barrier.FlatSquare
-import Graphics.Badge.Barrier.Plastic
+import Graphics.Badge.Barrier.Style.Flat
+import Graphics.Badge.Barrier.Style.FlatSquare
+import Graphics.Badge.Barrier.Style.Plastic
 
 import Text.Blaze.Svg.Renderer.Utf8
 
 import Data.Text(Text)
 import Data.ByteString.Lazy(ByteString)
 
+-- | @
+-- renderBadge flat "left" "right"
+-- @
 renderBadge :: Badge b => b
             -> Text -- ^ left text
             -> Text -- ^ right text
