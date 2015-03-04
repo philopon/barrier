@@ -2,5 +2,5 @@ language: haskell
 ghc:
   - 7.8
   - 7.6
-install: cabal install --only-dependencies --enable-tests -fbuild-example -fbuild-generator
-script: cabal configure --enable-tests -fbuild-example -fbuild-generator && cabal build && cabal test
+install: cabal install --only-dependencies --enable-tests -fexample -fgenerator -ftest-results
+script: cabal configure --enable-tests -fexample -fgenerator -ftest-results && cabal build && cabal test
