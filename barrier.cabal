@@ -1,0 +1,64 @@
+name:                barrier
+version:             0.1.0
+synopsis:            Shield.io style badge generator
+-- description:         
+license:             MIT
+license-file:        LICENSE
+author:              HirotomoMoriwaki<philopon.dependence@gmail.com>
+maintainer:          HirotomoMoriwaki<philopon.dependence@gmail.com>
+Homepage:            https://github.com/philopon/apiary
+Bug-reports:         https://github.com/philopon/apiary/issues
+copyright:           (c) 2014-2015 Hirotomo Moriwaki
+category:            Graphics
+build-type:          Simple
+cabal-version:       >=1.10
+
+flag build-example
+  default: False
+
+flag build-generator
+  default: False
+
+library
+  exposed-modules:     Graphics.Badge.Barrier
+                       Graphics.Badge.Barrier.Flat
+                       Graphics.Badge.Barrier.FlatSquare
+                       Graphics.Badge.Barrier.Plastic
+                       Graphics.Badge.Barrier.Color
+                       Graphics.Badge.Barrier.Internal
+  build-depends:       base                 >=4.6  && <4.8
+                     , template-haskell
+                     , unordered-containers >=0.2  && <0.3
+                     , blaze-svg            >=0.3  && <0.4
+                     , text                 >=1.1  && <1.3
+                     , bytestring           >=0.10 && <0.11
+  hs-source-dirs:      src
+  ghc-options:         -Wall -O2
+  c-sources:           cbit/wrapper.c
+  default-language:    Haskell2010
+
+executable barrier-data-generator
+  main-is:             data-generator.hs
+  if flag(build-generator)
+    buildable:         True
+    build-depends:     base      >=4.6 && <4.8
+                     , freetype2 >=0.1 && <0.2
+  else
+    buildable:         False
+  ghc-options:         -Wall -O2
+  default-language:    Haskell2010
+
+executable barrier-example
+  main-is:             example.hs
+  if flag(build-example)
+    buildable:         True
+    build-depends:     base             >=4.6  && <4.8
+                     , blaze-svg        >=0.3  && <0.4
+                     , bytestring       >=0.10 && <0.11
+                     , lens-family-core >=1.2  && <1.3
+                     , barrier
+  else
+    buildable:         False
+  hs-source-dirs:      examples
+  ghc-options:         -Wall -O2
+  default-language:    Haskell2010
