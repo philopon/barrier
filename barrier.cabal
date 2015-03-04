@@ -1,16 +1,17 @@
 name:                barrier
 version:             0.1.0
 synopsis:            Shield.io style badge generator
--- description:         
+description:         see example: <https://github.com/philopon/barrier/blob/master/examples/example.hs>
 license:             MIT
 license-file:        LICENSE
 author:              HirotomoMoriwaki<philopon.dependence@gmail.com>
 maintainer:          HirotomoMoriwaki<philopon.dependence@gmail.com>
-Homepage:            https://github.com/philopon/apiary
-Bug-reports:         https://github.com/philopon/apiary/issues
-copyright:           (c) 2014-2015 Hirotomo Moriwaki
+Homepage:            https://github.com/philopon/barrier
+Bug-reports:         https://github.com/philopon/barrier/issues
+copyright:           (c) 2015 Hirotomo Moriwaki
 category:            Graphics
 build-type:          Simple
+data-files:          data/advance.txt
 cabal-version:       >=1.10
 
 flag build-example
@@ -34,7 +35,6 @@ library
                      , bytestring           >=0.10 && <0.11
   hs-source-dirs:      src
   ghc-options:         -Wall -O2
-  c-sources:           cbit/wrapper.c
   default-language:    Haskell2010
 
 executable barrier-data-generator
