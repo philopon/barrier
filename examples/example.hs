@@ -4,4 +4,6 @@ import Graphics.Badge.Barrier
 import qualified Data.ByteString.Lazy.Char8 as L
 
 main :: IO ()
-main = L.putStrLn $ renderBadge (flat & right .~ red) "build" "failing"
+main = do
+    L.writeFile "passing.svg" $ renderBadge flat "build" "passing"
+    L.writeFile "failing.svg" $ renderBadge (flat & right .~ red) "build" "failing"
