@@ -100,7 +100,7 @@ test-suite tasty
   build-depends:       base
                      , bytestring
                      , lens-family-core >=1.2  && <1.3
-                     , tasty            >=0.10 && <0.11
+                     , tasty            >=0.10 && <0.12
                      , tasty-golden     >=2.2  && <2.4
                      , barrier
   hs-source-dirs:      tests
