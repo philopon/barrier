@@ -45,7 +45,7 @@ library
                        Graphics.Badge.Barrier.Style.Flat
                        Graphics.Badge.Barrier.Style.FlatSquare
                        Graphics.Badge.Barrier.Style.Plastic
-  build-depends:       base                 >=4.6  && <4.9
+  build-depends:       base                 >=4.6  && <5
                      , template-haskell
                      , unordered-containers >=0.2  && <0.3
                      , blaze-svg            >=0.3  && <0.4
