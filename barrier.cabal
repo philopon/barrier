@@ -1,5 +1,5 @@
 name:                barrier
-version:             0.1.0
+version:             0.1.1
 synopsis:            Shield.io style badge generator
 description:         see example: <https://github.com/philopon/barrier/blob/master/examples/example.hs>
 license:             MIT
@@ -8,7 +8,7 @@ author:              HirotomoMoriwaki<philopon.dependence@gmail.com>
 maintainer:          HirotomoMoriwaki<philopon.dependence@gmail.com>
 Homepage:            https://github.com/philopon/barrier
 Bug-reports:         https://github.com/philopon/barrier/issues
-copyright:           (c) 2015 Hirotomo Moriwaki
+copyright:           (c) 2015-2016 Hirotomo Moriwaki
 category:            Graphics
 build-type:          Simple
 data-files:          data/advance.txt
