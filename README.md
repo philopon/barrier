@@ -4,4 +4,4 @@ barrier
 [![Hackage](http://img.shields.io/hackage/v/barrier.svg)](https://hackage.haskell.org/package/barrier)
 [![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Shield.io style badge generator
+Shields.io style badge generator

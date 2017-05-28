@@ -1,6 +1,6 @@
 name:                barrier
 version:             0.1.1
-synopsis:            Shield.io style badge generator
+synopsis:            Shields.io style badge generator
 description:         see example: <https://github.com/philopon/barrier/blob/master/examples/example.hs>
 license:             MIT
 license-file:        LICENSE
