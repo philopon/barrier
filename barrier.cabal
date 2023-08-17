@@ -50,7 +50,7 @@ library
                      , unordered-containers >=0.2  && <0.3
                      , blaze-svg            >=0.3  && <0.4
                      , text                 >=1.1  && <2.1
-                     , bytestring           >=0.10 && <0.12
+                     , bytestring           >=0.10 && <0.13
   hs-source-dirs:      src
   ghc-options:         -Wall -O2
   default-language:    Haskell2010
