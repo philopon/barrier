@@ -1,3 +1,4 @@
+cabal-version:       >=1.10
 name:                barrier
 version:             0.1.1
 synopsis:            Shields.io style badge generator
@@ -24,7 +25,19 @@ data-files:          data/advance.txt
                    , tests/data/plastic/2.svg
                    , tests/data/plastic/3.svg
                    , tests/data/plastic/4.svg
-cabal-version:       >=1.10
+
+tested-with:
+  GHC == 9.8.0
+  GHC == 9.6.2
+  GHC == 9.4.6
+  GHC == 9.2.8
+  GHC == 9.0.2
+  GHC == 8.10.7
+  GHC == 8.8.4
+  GHC == 8.6.5
+  GHC == 8.4.4
+  GHC == 8.2.2
+  GHC == 8.0.2
 
 flag example
   default: False
